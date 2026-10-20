@@ -1,5 +1,6 @@
 -- Conteúdo inicial / de EXEMPLO. Programação, notícias, eventos e patrocinadores
 -- abaixo são fictícios: edite ou apague pelo painel (/admin).
+-- As imagens de exemplo (fotos livres do Unsplash) não vêm no SQL: envie pelo painel.
 SET NAMES utf8mb4;
 SET time_zone = '-03:00'; -- datas de exemplo no horário de Brasília
 
@@ -60,11 +61,14 @@ INSERT INTO noticias (titulo, slug, resumo, conteudo, categoria, destaque, publi
 ('Novo site da Máxima FM está no ar', 'novo-site-da-maxima-fm-esta-no-ar', 'Agora você ouve a Máxima ao vivo enquanto navega, confere a programação em tempo real e acompanha tudo o que acontece na região.', '<p>A Rádio Máxima FM 97,1 estreia um site totalmente novo. O player ao vivo continua tocando enquanto você navega entre as páginas, e a programação mostra automaticamente o que está no ar.</p><p>Também tem notícias, galerias de fotos dos eventos e um canal direto para você falar com a gente.</p><p><em>Esta é uma notícia de exemplo — edite ou apague pelo painel.</em></p>', 'Máxima', 1, NOW()),
 ('Agenda cultural do fim de semana no Centro-Oeste', 'agenda-cultural-do-fim-de-semana', 'Shows, feiras e eventos esportivos movimentam as cidades da região neste fim de semana.', '<p>Confira a programação cultural das cidades da nossa região e aproveite o fim de semana.</p><p><em>Notícia de exemplo.</em></p>', 'Cultura', 0, NOW() - INTERVAL 1 DAY),
 ('Dicas para economizar na conta de luz', 'dicas-para-economizar-na-conta-de-luz', 'Pequenas mudanças de hábito podem reduzir bastante o valor da fatura no fim do mês.', '<p>Desligar aparelhos da tomada, aproveitar a luz natural e usar o chuveiro na posição verão são algumas atitudes simples que fazem diferença.</p><p><em>Notícia de exemplo.</em></p>', 'Serviço', 0, NOW() - INTERVAL 2 DAY),
-('Campanha de vacinação continua nos postos de saúde', 'campanha-de-vacinacao-continua', 'Procure a unidade de saúde mais próxima com documento e cartão de vacina.', '<p>As secretarias municipais de saúde reforçam a importância de manter a caderneta de vacinação em dia.</p><p><em>Notícia de exemplo.</em></p>', 'Saúde', 0, NOW() - INTERVAL 3 DAY);
+('Campanha de vacinação continua nos postos de saúde', 'campanha-de-vacinacao-continua', 'Procure a unidade de saúde mais próxima com documento e cartão de vacina.', '<p>As secretarias municipais de saúde reforçam a importância de manter a caderneta de vacinação em dia.</p><p><em>Notícia de exemplo.</em></p>', 'Saúde', 0, NOW() - INTERVAL 3 DAY),
+('Times da região se preparam para o campeonato amador', 'times-da-regiao-se-preparam-para-o-campeonato-amador', 'Equipes de Bom Despacho e das cidades vizinhas intensificam os treinos para a nova temporada.', '<p>Os campos da região voltaram a ficar movimentados. Com a proximidade do campeonato amador, os times aumentaram a frequência dos treinos e já fecham os elencos para a temporada.</p><p>A Máxima acompanha a competição e traz os resultados durante a programação.</p><p><em>Notícia de exemplo.</em></p>', 'Esporte', 0, NOW() - INTERVAL 4 DAY),
+('Cidades históricas de Minas atraem turistas no feriado', 'cidades-historicas-de-minas-atraem-turistas-no-feriado', 'Ruas de pedra, casarões coloniais e muita comida mineira: o roteiro que não sai de moda.', '<p>O feriado prolongado deve movimentar as cidades históricas de Minas Gerais. Pousadas e restaurantes já registram alta procura.</p><p>Planeje a viagem com antecedência e confira as condições das estradas antes de sair.</p><p><em>Notícia de exemplo.</em></p>', 'Região', 0, NOW() - INTERVAL 5 DAY);
 
 INSERT INTO eventos (titulo, slug, descricao, local, data_evento) VALUES
 ('Máxima no Parque', 'maxima-no-parque', 'Tarde de música ao vivo, brincadeiras e sorteios com a equipe da Máxima. (Evento de exemplo — envie as fotos pelo painel.)', 'Bom Despacho - MG', CURDATE() - INTERVAL 10 DAY),
-('Show de Aniversário da Máxima', 'show-de-aniversario-da-maxima', 'Uma noite especial para comemorar com os ouvintes. (Evento de exemplo.)', 'Bom Despacho - MG', CURDATE() - INTERVAL 40 DAY);
+('Show de Aniversário da Máxima', 'show-de-aniversario-da-maxima', 'Uma noite especial para comemorar com os ouvintes. (Evento de exemplo.)', 'Bom Despacho - MG', CURDATE() - INTERVAL 40 DAY),
+('Balada Máxima', 'balada-maxima', 'Uma noite com DJs, muita luz e os maiores hits da Máxima. (Evento de exemplo.)', 'Bom Despacho - MG', CURDATE() - INTERVAL 20 DAY);
 
 INSERT INTO patrocinadores (nome, link, ordem) VALUES
 ('Seu negócio aqui', '/contato', 1),
