@@ -1,0 +1,15 @@
+# configuração com senhas (cada ambiente tem a sua)
+public_html/app/config.php
+config.php
+
+# credenciais de desenvolvimento
+database/.credenciais-locais.txt
+
+# imagens enviadas pelo painel (ficam só no servidor)
+public_html/uploads/*
+!public_html/uploads/.htaccess
+
+# sistema
+.DS_Store
+Thumbs.db
+desktop.ini
