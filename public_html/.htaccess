@@ -17,6 +17,11 @@ AddDefaultCharset UTF-8
   RewriteRule ^ index.php [QSA,L]
 </IfModule>
 
+# A Hostinger substitui o CSP enviado pelo PHP; o valor real fica aqui.
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data: https:; media-src 'self' https: http:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; connect-src 'self'; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://www.google.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+</IfModule>
+
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/webp "access plus 1 year"
