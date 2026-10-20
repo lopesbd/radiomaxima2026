@@ -1,6 +1,7 @@
 -- Conteúdo inicial / de EXEMPLO. Programação, notícias, eventos e patrocinadores
 -- abaixo são fictícios: edite ou apague pelo painel (/admin).
 SET NAMES utf8mb4;
+SET time_zone = '-03:00'; -- datas de exemplo no horário de Brasília
 
 INSERT INTO config (chave, valor) VALUES
 ('nome', 'Rádio Máxima FM'),

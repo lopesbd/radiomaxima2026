@@ -3,7 +3,7 @@ public_html/app/config.php
 config.php
 
 # credenciais de desenvolvimento
-database/.credenciais-locais.txt
+database/.credenciais-*.txt
 
 # imagens enviadas pelo painel (ficam só no servidor)
 public_html/uploads/*
